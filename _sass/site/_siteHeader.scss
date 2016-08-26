@@ -1,0 +1,41 @@
+$headerHeight: 70px;
+
+.site-header {
+  border-top: none;
+  border-bottom: none;
+  min-height: $headerHeight;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background-color: $white;
+
+  .site-title {
+    position: relative;
+    padding-top: 90px;
+    font-size: 60px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+      color: $success;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 3px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: $headerHeight;
+      width: $headerHeight;
+      background: url('svg/sagacify.svg') 0 0 no-repeat;
+      background-size: $headerHeight $headerHeight;
+    }
+  }
+}
+
+.site-title {
+  line-height: $headerHeight;
+}
