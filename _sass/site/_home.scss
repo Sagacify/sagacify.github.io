@@ -1,0 +1,22 @@
+.home {
+  .post-list {
+    padding-bottom: 60px;
+
+    & > li {
+      position: relative;
+      margin-bottom: 0;
+
+      .post-meta {
+        position: absolute;
+        color: $white;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+      }
+
+      h2 {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
